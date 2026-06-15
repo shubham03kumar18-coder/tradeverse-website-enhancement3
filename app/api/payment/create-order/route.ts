@@ -90,7 +90,7 @@ if (ebook.is_free || Number(ebook.price_inr) === 0) {
         user_id: user.id,
         ebook_id: ebookId,
         razorpay_order_id: null,
-        razorpay_payment_id: `free_${Date.now()}`,
+        razorpay_payment_id: "free_" + Date.now(),
         razorpay_signature: "free",
         amount_inr: 0,
         status: "paid",
